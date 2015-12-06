@@ -1,0 +1,150 @@
+@bgColor: #000;
+@fgColor: #01DF3A;
+
+.CodeMirror {
+    
+    .CodeMirror-linenumber,
+    .CodeMirror-scroll,
+    .CodeMirror-gutters {
+        background-color: @bgColor;
+        color: @fgColor;
+    }
+    
+    .CodeMirror-linenumber{
+        color: #04B404;
+    }
+    
+    .cm-matchingtag,
+	.CodeMirror-matchingtag{
+        border-bottom: 1px dotted @fgColor;
+        background-color: transparent;
+    }
+    
+    .cm-matchingbracket,
+    .CodeMirror-matchingbracket{
+        color: @fgColor !important;
+        box-shadow: 0px 0px 5px #000;
+        background-color: transparent;
+        border: 1px solid #bbb;
+        border-radius: 3px;
+    }
+    
+    .CodeMirror-cursor{
+        border-right: 6px solid @fgColor;
+        border-left: 1px solid @fgColor;
+        z-index: 3;
+    }
+    
+    .cm-comment{
+        color: #0B6121;
+        font-style: italic;
+    }
+    
+    .cm-bracket, .cm-variable, .cm-attribute, .cm-operator{
+        color: @fgColor !important;
+    }
+    
+    .cm-string, .cm-string-2, .cm-hr {
+        color: #01DF01;
+    }
+    
+    .cm-variable-2{
+        color: #3ADF00;
+        border-bottom: 1px dashed #3ADF00;
+    }
+    
+    .CodeMirror-selected {
+        padding-left: 1px;
+        padding-right: 1px;
+		background-color: rgba(1,223,58,.2);
+	}
+    
+    .cm-keyword, .cm-def, .cm-number{
+        color: #04B404;
+    }
+    
+    .cm-atom {
+        color: #298A08;
+    }
+    
+    .cm-meta{
+        color: @fgColor !important;
+    }
+    
+    .cm-builtin {
+		color: #BFFF00;
+	}
+    
+    //style
+    .cm-m-css.cm-tag {
+        color: #38610B;
+    }
+    
+    .cm-m-css.cm-property {
+		color: #04B404;
+        border-bottom: 1px dotted @fgColor;
+    }
+    
+	.cm-m-css.cm-qualifier,
+	.cm-m-css.cm-variable-3 {
+        color: #9FF781;
+    }
+    
+    //html-xml
+    .cm-m-xml.cm-variable-2{
+        color: white;
+    }
+    
+    .cm-m-xml.cm-tag {
+		color: #21610B;
+    } 
+    
+    //script
+    .cm-m-javascript.cm-operator {
+		color: #B4B4B4;
+	}
+
+	.cm-m-javascript.cm-variable,
+	.cm-m-javascript.cm-variable-3,
+	.cm-m-javascript.cm-property {
+		color: greenyellow;
+	}
+    
+    .cm-m-javascript.cm-def{
+        color: #FE2E2E;
+    }
+    
+    .cm-m-javascript.cm-variable-2{
+        color: #FE2E64;
+    }
+    
+    //search
+    .CodeMirror-searching{
+		color: #000 !important;
+	}
+
+	.CodeMirror-searching.searching-last,
+	.CodeMirror-searching.searching-first {
+		border-radius: 1px;
+		background-color: @fgColor;
+		box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+	}
+
+	.CodeMirror-searching.searching-current-match {
+		background-color: darkgreen;
+        box-shadow: 0 0 10px #FE2E2E;
+	}
+}
+
+//Code For Highlight Active Line
+.CodeMirror
+{
+     .CodeMirror-activeline-background {
+        background: rgba(1,223,58,.3);
+        box-shadow: 0 0 10px @fgColor;        
+    }
+    
+    .CodeMirror-gutter-elt{
+        background: transparent;
+    }
+}
