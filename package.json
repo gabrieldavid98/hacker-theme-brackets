@@ -11,7 +11,8 @@
     },
     "keywords": [
         "dark",
-        "theme"
+        "theme",
+        "hacker"
     ],
     "theme": {
         "file": "theme/theme.less",
